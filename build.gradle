@@ -1,8 +1,9 @@
 buildscript {
-    ext.kotlin_version = '1.1.0'
+    ext.kotlin_version = '1.1.60'
 
     repositories {
         mavenCentral()
+        google()
     }
 
     dependencies {
@@ -22,7 +23,7 @@ repositories {
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile 'com.google.guava:guava:16.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'com.google.guava:guava:16.0'
     testCompile 'junit:junit:4.12'
 }
